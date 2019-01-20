@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		007250541297572E60FCC42F1E5588E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		06EF59F3F5C29B3EE41F5251E1DD7169 /* AMKeyboardFrameTracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A87D959161609DE76323C079F24B9086 /* AMKeyboardFrameTracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A899D576C79A5D01A2F7AF1C01FA723 /* AMKeyboardFrameTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EBBB58A703F533CFC7BD13E7BF0CA7 /* AMKeyboardFrameTracker.swift */; };
+		327D0D77BECAA001B3F3261802382783 /* Pods-AMKeyboardFrameTracker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F82ED9752EC74E95A4259E1950EBC4 /* Pods-AMKeyboardFrameTracker_Example-dummy.m */; };
+		4B16E800D39B883374CF92482AA208CF /* Pods-AMKeyboardFrameTracker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2C54EE03A0F2D381738125031D69DF /* Pods-AMKeyboardFrameTracker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6639790EA2200A21E7E7493FE861FD84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		6A5B7C567615190CCF2DF70B988266F5 /* Pods-AMKeyboardFrameTracker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 260DB8593C9391A68461A2DEA4309ECF /* Pods-AMKeyboardFrameTracker_Tests-dummy.m */; };
+		AD822A71BFE6E507A93CF3557593609B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		C3B42F2B5945C4B4D545938398444331 /* AMKeyboardFrameTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4353B2FD95EB224648F25747302D9D7B /* AMKeyboardFrameTracker-dummy.m */; };
+		FD3218243F141AC727FE0F370DCE8EEC /* Pods-AMKeyboardFrameTracker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4513F5A4C3D5A09BD643B1EED08D24F7 /* Pods-AMKeyboardFrameTracker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC2799D368627C903B67FEAAC0553B9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15AC2C36C75D60B12827E6C8A4178050;
+			remoteInfo = "Pods-AMKeyboardFrameTracker_Example";
+		};
+		D2740671D426873C33A7DC4F2BD96138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC99413069053D5FE3FDED6A8549435D;
+			remoteInfo = AMKeyboardFrameTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02A0354DE9D15C4DB52CF3E79518D2A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F82ED9752EC74E95A4259E1950EBC4 /* Pods-AMKeyboardFrameTracker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMKeyboardFrameTracker_Example-dummy.m"; sourceTree = "<group>"; };
+		04DFFBBA5B291B15F75CA15EAC7D7F41 /* Pods-AMKeyboardFrameTracker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMKeyboardFrameTracker_Tests-resources.sh"; sourceTree = "<group>"; };
+		0A2C54EE03A0F2D381738125031D69DF /* Pods-AMKeyboardFrameTracker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMKeyboardFrameTracker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0F1ECD166FA5092308FD3CF751D2CA4C /* Pods-AMKeyboardFrameTracker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMKeyboardFrameTracker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		14E406B0297235C0082EC265432C9DE8 /* Pods_AMKeyboardFrameTracker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMKeyboardFrameTracker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		260DB8593C9391A68461A2DEA4309ECF /* Pods-AMKeyboardFrameTracker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMKeyboardFrameTracker_Tests-dummy.m"; sourceTree = "<group>"; };
+		4353B2FD95EB224648F25747302D9D7B /* AMKeyboardFrameTracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMKeyboardFrameTracker-dummy.m"; sourceTree = "<group>"; };
+		4513F5A4C3D5A09BD643B1EED08D24F7 /* Pods-AMKeyboardFrameTracker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMKeyboardFrameTracker_Example-umbrella.h"; sourceTree = "<group>"; };
+		4EE9EE8BEFA37A97C8CBF81DF1AB517D /* Pods-AMKeyboardFrameTracker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AMKeyboardFrameTracker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		562D477FF4F19A7C1401DBD286EE8D17 /* Pods-AMKeyboardFrameTracker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AMKeyboardFrameTracker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		58B04135E999DFC462F6158C176458BD /* AMKeyboardFrameTracker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMKeyboardFrameTracker-prefix.pch"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5EADE86D8744887674F3EE9C7299F274 /* Pods-AMKeyboardFrameTracker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMKeyboardFrameTracker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		72B486E290219B6CD5632769A998FF8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A2610667AB647E91748B31A9D04CF0D /* AMKeyboardFrameTracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AMKeyboardFrameTracker.modulemap; sourceTree = "<group>"; };
+		836C414728FF32A108C12A9693C0D8D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		86B5804785659A833161AE052EB0E091 /* Pods-AMKeyboardFrameTracker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMKeyboardFrameTracker_Example-resources.sh"; sourceTree = "<group>"; };
+		877FBE2679F9677531AC4C285E57839D /* AMKeyboardFrameTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMKeyboardFrameTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93AE2FC797D6E2233076E5F2AE170180 /* Pods-AMKeyboardFrameTracker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMKeyboardFrameTracker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		94A4D910D24CCF65B43B220290870298 /* Pods-AMKeyboardFrameTracker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMKeyboardFrameTracker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9649D624E59736A6A11A61939D40D898 /* Pods-AMKeyboardFrameTracker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMKeyboardFrameTracker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A1B30ECA299EB58073E5CC2BB7164F7F /* AMKeyboardFrameTracker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMKeyboardFrameTracker.xcconfig; sourceTree = "<group>"; };
+		A7AEFAA8DE16C69F269C592BDF70BCFA /* Pods-AMKeyboardFrameTracker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMKeyboardFrameTracker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A87D959161609DE76323C079F24B9086 /* AMKeyboardFrameTracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMKeyboardFrameTracker-umbrella.h"; sourceTree = "<group>"; };
+		B1093927E14898795EC2C6FC7837FF24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2CE51998C21D09D3F0C2A88759EFE24 /* Pods-AMKeyboardFrameTracker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AMKeyboardFrameTracker_Example.modulemap"; sourceTree = "<group>"; };
+		CDABC8ADB12CA7177F340F86DC0284ED /* Pods-AMKeyboardFrameTracker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMKeyboardFrameTracker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D45086F499A34CB691D64884DBD5268E /* Pods-AMKeyboardFrameTracker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AMKeyboardFrameTracker_Tests.modulemap"; sourceTree = "<group>"; };
+		DEEF591575B2391D6F5642F273B18343 /* Pods-AMKeyboardFrameTracker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMKeyboardFrameTracker_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E8EBBB58A703F533CFC7BD13E7BF0CA7 /* AMKeyboardFrameTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AMKeyboardFrameTracker.swift; path = AMKeyboardFrameTracker/Classes/AMKeyboardFrameTracker.swift; sourceTree = "<group>"; };
+		F000BA28A02D376C8AAE6D7F3B0C4C53 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F661B9BF909FE3F604BCA2A735EF2003 /* Pods_AMKeyboardFrameTracker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMKeyboardFrameTracker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB956B7858AF36ED3A9ACDE60EEE5593 /* AMKeyboardFrameTracker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AMKeyboardFrameTracker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ECE43592BF9F23F2C6FF15136D5B5FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				007250541297572E60FCC42F1E5588E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404E392ED81AC0452DAA3AD52679DDBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6639790EA2200A21E7E7493FE861FD84 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81293DC3C1B37834E5DA32373CEA14D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD822A71BFE6E507A93CF3557593609B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C16CE0B5F2839E3B3C8FABF85446161 /* AMKeyboardFrameTracker */ = {
+			isa = PBXGroup;
+			children = (
+				E8EBBB58A703F533CFC7BD13E7BF0CA7 /* AMKeyboardFrameTracker.swift */,
+				58042E6F61BC3D40B212AF45FCC4DD0C /* Pod */,
+				CF3F521E3F8EEFDB49D1B7EBF7A69E40 /* Support Files */,
+			);
+			name = AMKeyboardFrameTracker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		16F2120E02FBAF1E65A01C212911DCA0 /* Pods-AMKeyboardFrameTracker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				72B486E290219B6CD5632769A998FF8C /* Info.plist */,
+				B2CE51998C21D09D3F0C2A88759EFE24 /* Pods-AMKeyboardFrameTracker_Example.modulemap */,
+				562D477FF4F19A7C1401DBD286EE8D17 /* Pods-AMKeyboardFrameTracker_Example-acknowledgements.markdown */,
+				5EADE86D8744887674F3EE9C7299F274 /* Pods-AMKeyboardFrameTracker_Example-acknowledgements.plist */,
+				03F82ED9752EC74E95A4259E1950EBC4 /* Pods-AMKeyboardFrameTracker_Example-dummy.m */,
+				CDABC8ADB12CA7177F340F86DC0284ED /* Pods-AMKeyboardFrameTracker_Example-frameworks.sh */,
+				86B5804785659A833161AE052EB0E091 /* Pods-AMKeyboardFrameTracker_Example-resources.sh */,
+				4513F5A4C3D5A09BD643B1EED08D24F7 /* Pods-AMKeyboardFrameTracker_Example-umbrella.h */,
+				9649D624E59736A6A11A61939D40D898 /* Pods-AMKeyboardFrameTracker_Example.debug.xcconfig */,
+				94A4D910D24CCF65B43B220290870298 /* Pods-AMKeyboardFrameTracker_Example.release.xcconfig */,
+			);
+			name = "Pods-AMKeyboardFrameTracker_Example";
+			path = "Target Support Files/Pods-AMKeyboardFrameTracker_Example";
+			sourceTree = "<group>";
+		};
+		326BF4002F6E268C1E45992FB9BF9CA3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				16F2120E02FBAF1E65A01C212911DCA0 /* Pods-AMKeyboardFrameTracker_Example */,
+				91D0C23FD794EC95F11E3DA60F1778DD /* Pods-AMKeyboardFrameTracker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		58042E6F61BC3D40B212AF45FCC4DD0C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FB956B7858AF36ED3A9ACDE60EEE5593 /* AMKeyboardFrameTracker.podspec */,
+				836C414728FF32A108C12A9693C0D8D4 /* LICENSE */,
+				F000BA28A02D376C8AAE6D7F3B0C4C53 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D1E9E13B6D42E14BE4021C5A44A9A8B5 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DBC4C1675286B16E71A9167F47EDA329 /* Products */,
+				326BF4002F6E268C1E45992FB9BF9CA3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		91D0C23FD794EC95F11E3DA60F1778DD /* Pods-AMKeyboardFrameTracker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B1093927E14898795EC2C6FC7837FF24 /* Info.plist */,
+				D45086F499A34CB691D64884DBD5268E /* Pods-AMKeyboardFrameTracker_Tests.modulemap */,
+				4EE9EE8BEFA37A97C8CBF81DF1AB517D /* Pods-AMKeyboardFrameTracker_Tests-acknowledgements.markdown */,
+				0F1ECD166FA5092308FD3CF751D2CA4C /* Pods-AMKeyboardFrameTracker_Tests-acknowledgements.plist */,
+				260DB8593C9391A68461A2DEA4309ECF /* Pods-AMKeyboardFrameTracker_Tests-dummy.m */,
+				DEEF591575B2391D6F5642F273B18343 /* Pods-AMKeyboardFrameTracker_Tests-frameworks.sh */,
+				04DFFBBA5B291B15F75CA15EAC7D7F41 /* Pods-AMKeyboardFrameTracker_Tests-resources.sh */,
+				0A2C54EE03A0F2D381738125031D69DF /* Pods-AMKeyboardFrameTracker_Tests-umbrella.h */,
+				A7AEFAA8DE16C69F269C592BDF70BCFA /* Pods-AMKeyboardFrameTracker_Tests.debug.xcconfig */,
+				93AE2FC797D6E2233076E5F2AE170180 /* Pods-AMKeyboardFrameTracker_Tests.release.xcconfig */,
+			);
+			name = "Pods-AMKeyboardFrameTracker_Tests";
+			path = "Target Support Files/Pods-AMKeyboardFrameTracker_Tests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF3F521E3F8EEFDB49D1B7EBF7A69E40 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A2610667AB647E91748B31A9D04CF0D /* AMKeyboardFrameTracker.modulemap */,
+				A1B30ECA299EB58073E5CC2BB7164F7F /* AMKeyboardFrameTracker.xcconfig */,
+				4353B2FD95EB224648F25747302D9D7B /* AMKeyboardFrameTracker-dummy.m */,
+				58B04135E999DFC462F6158C176458BD /* AMKeyboardFrameTracker-prefix.pch */,
+				A87D959161609DE76323C079F24B9086 /* AMKeyboardFrameTracker-umbrella.h */,
+				02A0354DE9D15C4DB52CF3E79518D2A2 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AMKeyboardFrameTracker";
+			sourceTree = "<group>";
+		};
+		D1E9E13B6D42E14BE4021C5A44A9A8B5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C16CE0B5F2839E3B3C8FABF85446161 /* AMKeyboardFrameTracker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DBC4C1675286B16E71A9167F47EDA329 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				877FBE2679F9677531AC4C285E57839D /* AMKeyboardFrameTracker.framework */,
+				F661B9BF909FE3F604BCA2A735EF2003 /* Pods_AMKeyboardFrameTracker_Example.framework */,
+				14E406B0297235C0082EC265432C9DE8 /* Pods_AMKeyboardFrameTracker_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		583EB65FC36569EAE2AD9F7AE065F3C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3218243F141AC727FE0F370DCE8EEC /* Pods-AMKeyboardFrameTracker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59810442DD8C411290042B632E8081DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06EF59F3F5C29B3EE41F5251E1DD7169 /* AMKeyboardFrameTracker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD22560954FB4080BD76531ECE977956 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B16E800D39B883374CF92482AA208CF /* Pods-AMKeyboardFrameTracker_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01BB2521B990F1E0186A3A21EAEBDD43 /* Pods-AMKeyboardFrameTracker_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717F9423EFD81F087324FFCA1BA32202 /* Build configuration list for PBXNativeTarget "Pods-AMKeyboardFrameTracker_Tests" */;
+			buildPhases = (
+				5E75D39A819A5936CDD254445D413275 /* Sources */,
+				A81293DC3C1B37834E5DA32373CEA14D /* Frameworks */,
+				CD22560954FB4080BD76531ECE977956 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F731798CABA52E85C6157DC041010146 /* PBXTargetDependency */,
+			);
+			name = "Pods-AMKeyboardFrameTracker_Tests";
+			productName = "Pods-AMKeyboardFrameTracker_Tests";
+			productReference = 14E406B0297235C0082EC265432C9DE8 /* Pods_AMKeyboardFrameTracker_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		15AC2C36C75D60B12827E6C8A4178050 /* Pods-AMKeyboardFrameTracker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43CA91CAB7A452B1C884CA8E0061D759 /* Build configuration list for PBXNativeTarget "Pods-AMKeyboardFrameTracker_Example" */;
+			buildPhases = (
+				4B1897B42F2C4B983C3FBED44F6C4528 /* Sources */,
+				1ECE43592BF9F23F2C6FF15136D5B5FA /* Frameworks */,
+				583EB65FC36569EAE2AD9F7AE065F3C9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F06B6FB37769A13AE68277BE165CE92 /* PBXTargetDependency */,
+			);
+			name = "Pods-AMKeyboardFrameTracker_Example";
+			productName = "Pods-AMKeyboardFrameTracker_Example";
+			productReference = F661B9BF909FE3F604BCA2A735EF2003 /* Pods_AMKeyboardFrameTracker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC99413069053D5FE3FDED6A8549435D /* AMKeyboardFrameTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F96A3730D02068FA7F7446E70871332 /* Build configuration list for PBXNativeTarget "AMKeyboardFrameTracker" */;
+			buildPhases = (
+				2888DFB7ABF7DD5973122CAB72A4009A /* Sources */,
+				404E392ED81AC0452DAA3AD52679DDBB /* Frameworks */,
+				59810442DD8C411290042B632E8081DB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMKeyboardFrameTracker;
+			productName = AMKeyboardFrameTracker;
+			productReference = 877FBE2679F9677531AC4C285E57839D /* AMKeyboardFrameTracker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					AC99413069053D5FE3FDED6A8549435D = {
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DBC4C1675286B16E71A9167F47EDA329 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC99413069053D5FE3FDED6A8549435D /* AMKeyboardFrameTracker */,
+				15AC2C36C75D60B12827E6C8A4178050 /* Pods-AMKeyboardFrameTracker_Example */,
+				01BB2521B990F1E0186A3A21EAEBDD43 /* Pods-AMKeyboardFrameTracker_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2888DFB7ABF7DD5973122CAB72A4009A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B42F2B5945C4B4D545938398444331 /* AMKeyboardFrameTracker-dummy.m in Sources */,
+				2A899D576C79A5D01A2F7AF1C01FA723 /* AMKeyboardFrameTracker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B1897B42F2C4B983C3FBED44F6C4528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327D0D77BECAA001B3F3261802382783 /* Pods-AMKeyboardFrameTracker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E75D39A819A5936CDD254445D413275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A5B7C567615190CCF2DF70B988266F5 /* Pods-AMKeyboardFrameTracker_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F06B6FB37769A13AE68277BE165CE92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AMKeyboardFrameTracker;
+			target = AC99413069053D5FE3FDED6A8549435D /* AMKeyboardFrameTracker */;
+			targetProxy = D2740671D426873C33A7DC4F2BD96138 /* PBXContainerItemProxy */;
+		};
+		F731798CABA52E85C6157DC041010146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AMKeyboardFrameTracker_Example";
+			target = 15AC2C36C75D60B12827E6C8A4178050 /* Pods-AMKeyboardFrameTracker_Example */;
+			targetProxy = AC2799D368627C903B67FEAAC0553B9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11D299AEBE29B7AFA75437559AF1341B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93AE2FC797D6E2233076E5F2AE170180 /* Pods-AMKeyboardFrameTracker_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AMKeyboardFrameTracker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AMKeyboardFrameTracker_Tests/Pods-AMKeyboardFrameTracker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iAmrMohamed.AMKeyboardFrameTracker-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		43ACC52B1C80A157C5678E9EC02A1131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9649D624E59736A6A11A61939D40D898 /* Pods-AMKeyboardFrameTracker_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AMKeyboardFrameTracker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AMKeyboardFrameTracker_Example/Pods-AMKeyboardFrameTracker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iAmrMohamed.AMKeyboardFrameTracker-Example";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		449766E91C70E842658559D11E5C69EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B30ECA299EB58073E5CC2BB7164F7F /* AMKeyboardFrameTracker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AMKeyboardFrameTracker/AMKeyboardFrameTracker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AMKeyboardFrameTracker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AMKeyboardFrameTracker/AMKeyboardFrameTracker.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iAmrMohamed.AMKeyboardFrameTracker;
+				PRODUCT_MODULE_NAME = AMKeyboardFrameTracker;
+				PRODUCT_NAME = AMKeyboardFrameTracker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47159BDF64DC1979FABDAD1707B8B0FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7AEFAA8DE16C69F269C592BDF70BCFA /* Pods-AMKeyboardFrameTracker_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AMKeyboardFrameTracker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AMKeyboardFrameTracker_Tests/Pods-AMKeyboardFrameTracker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iAmrMohamed.AMKeyboardFrameTracker-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5C9639CAB7723597CDEBB9203E4A44D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A4D910D24CCF65B43B220290870298 /* Pods-AMKeyboardFrameTracker_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AMKeyboardFrameTracker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AMKeyboardFrameTracker_Example/Pods-AMKeyboardFrameTracker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iAmrMohamed.AMKeyboardFrameTracker-Example";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9A09DF60A6DEC040C4B4C3E91081208D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B30ECA299EB58073E5CC2BB7164F7F /* AMKeyboardFrameTracker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AMKeyboardFrameTracker/AMKeyboardFrameTracker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AMKeyboardFrameTracker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AMKeyboardFrameTracker/AMKeyboardFrameTracker.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iAmrMohamed.AMKeyboardFrameTracker;
+				PRODUCT_MODULE_NAME = AMKeyboardFrameTracker;
+				PRODUCT_NAME = AMKeyboardFrameTracker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F96A3730D02068FA7F7446E70871332 /* Build configuration list for PBXNativeTarget "AMKeyboardFrameTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A09DF60A6DEC040C4B4C3E91081208D /* Debug */,
+				449766E91C70E842658559D11E5C69EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43CA91CAB7A452B1C884CA8E0061D759 /* Build configuration list for PBXNativeTarget "Pods-AMKeyboardFrameTracker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43ACC52B1C80A157C5678E9EC02A1131 /* Debug */,
+				5C9639CAB7723597CDEBB9203E4A44D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717F9423EFD81F087324FFCA1BA32202 /* Build configuration list for PBXNativeTarget "Pods-AMKeyboardFrameTracker_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47159BDF64DC1979FABDAD1707B8B0FC /* Debug */,
+				11D299AEBE29B7AFA75437559AF1341B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

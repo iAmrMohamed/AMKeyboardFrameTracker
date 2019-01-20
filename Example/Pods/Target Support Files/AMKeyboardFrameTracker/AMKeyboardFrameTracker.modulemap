@@ -1,0 +1,6 @@
+framework module AMKeyboardFrameTracker {
+  umbrella header "AMKeyboardFrameTracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - AMKeyboardFrameTracker (0.1.0)
+
+DEPENDENCIES:
+  - AMKeyboardFrameTracker (from `../`)
+
+EXTERNAL SOURCES:
+  AMKeyboardFrameTracker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AMKeyboardFrameTracker: 85409530b2dff462aed42ad6e9520f19d873d0d3
+
+PODFILE CHECKSUM: 055bd0766a0f663ec000e180b27a5384cbf600a6
+
+COCOAPODS: 1.5.2

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AMKeyboardFrameTracker_Example' do
+  pod 'AMKeyboardFrameTracker', :path => '../'
+
+  target 'AMKeyboardFrameTracker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
