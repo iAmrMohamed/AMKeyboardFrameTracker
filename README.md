@@ -39,16 +39,16 @@ if your ```inputView``` height changes dynamically depending on the content insi
 
 ```swift
 override func viewDidLayoutSubviews() {
-super.viewDidLayoutSubviews()
-self.keyboardFrameTrackerView.setHeight(self.inputContainerView.frame.height)
+    super.viewDidLayoutSubviews()
+    self.keyboardFrameTrackerView.setHeight(self.inputContainerView.frame.height)
 }
 ```
 
 ### Closure Callbacks
 ```swift
 keyboardFrameTrackerView.onKeyboardFrameDidChange = { [weak self] frame in
-guard let self = self else {return}
-print("Keyboard frame: ", frame)
+    guard let self = self else {return}
+    print("Keyboard frame: ", frame)
 }
 ```
 
@@ -60,9 +60,9 @@ keyboardFrameTrackerView.delegate = self
 
 ```swift
 extension ExampleViewController: AMKeyboardFrameTrackerDelegate {
-func keyboardFrameDidChange(with frame: CGRect) {
-print("Keyboard frame: ", frame)
-}
+    func keyboardFrameDidChange(with frame: CGRect) {
+        print("Keyboard frame: ", frame)
+    }
 }
 ```
 
@@ -71,13 +71,13 @@ First you need to add your ```inputView``` to you ```ViewController```  ```view`
 
 ```swift
 extension ExampleViewController: AMKeyboardFrameTrackerDelegate {
-func keyboardFrameDidChange(with frame: CGRect) {
-let tabBarHeight = self.tabBarController?.tabBar.frame.height ?? 0.0
-let bottomSapcing = self.view.frame.height - frame.origin.y - tabBarHeight - self.inputContainerView.frame.height
-
-self.inputViewBottomConstraint.constant = bottomSapcing > 0 ? bottomSapcing : 0
-self.view.layoutIfNeeded()
-}
+    func keyboardFrameDidChange(with frame: CGRect) {
+        let tabBarHeight = self.tabBarController?.tabBar.frame.height ?? 0.0
+        let bottomSapcing = self.view.frame.height - frame.origin.y - tabBarHeight - self.inputContainerView.frame.height
+        
+        self.inputViewBottomConstraint.constant = bottomSapcing > 0 ? bottomSapcing : 0
+        self.view.layoutIfNeeded()
+    }
 }
 ```
 
