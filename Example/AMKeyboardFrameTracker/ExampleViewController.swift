@@ -32,7 +32,9 @@ class ExampleViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         /* you need to set the inputAccessoryView height if you need
-         the keyboard to start dismissing exactly when the touch hits the inputContainerView while panning*/
+         the keyboard to start dismissing exactly when the touch hits the inputContainerView while panning
+         if your view interacts with the safeAreas you should be using a height constraint better
+         */
         self.keyboardFrameTrackerView.setHeight(self.inputContainerView.frame.height)
     }
 }
@@ -52,7 +54,7 @@ extension ExampleViewController: UITableViewDataSource {
 extension ExampleViewController: AMKeyboardFrameTrackerDelegate {
     func keyboardFrameDidChange(with frame: CGRect) {
         let tabBarHeight = self.tabBarController?.tabBar.frame.height ?? 0.0
-        let bottomSapcing = self.view.frame.height - frame.origin.y - tabBarHeight - self.inputContainerView.frame.height
+        let bottomSapcing = self.view.frame.height - frame.origin.y - tabBarHeight - self.keyboardFrameTrackerView.frame.height
         
         self.inputViewBottomConstraint.constant = bottomSapcing > 0 ? bottomSapcing : 0
         self.view.layoutIfNeeded()

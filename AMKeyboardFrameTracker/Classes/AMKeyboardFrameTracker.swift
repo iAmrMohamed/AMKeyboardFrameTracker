@@ -25,7 +25,7 @@ public class AMKeyboardFrameTrackerView: UIView {
     
     /// The current keyboard frame
     /// This could be nil if there is no inputAccessoryView attached to the keyboard
-    var currentKeyboardFrame: CGRect? {
+    public var currentKeyboardFrame: CGRect? {
         return self.superview?.frame
     }
     
@@ -49,16 +49,19 @@ public class AMKeyboardFrameTrackerView: UIView {
     }
     
     private func commonInit() {
-        self.backgroundColor = UIColor.clear
+        self.backgroundColor = .clear
         self.isUserInteractionEnabled = false
     }
     
     override public func willMove(toSuperview newSuperview: UIView?) {
-        if !self.didAddObserver {
-            newSuperview?.addObserver(self, forKeyPath: #keyPath(frame), options: [.new], context: nil)
-            newSuperview?.addObserver(self, forKeyPath: #keyPath(center), options: [.new], context: nil)
-            self.didAddObserver = true
+        if self.didAddObserver {
+            self.superview?.removeObserver(self, forKeyPath: #keyPath(frame))
+            self.superview?.removeObserver(self, forKeyPath: #keyPath(center))
         }
+        
+        newSuperview?.addObserver(self, forKeyPath: #keyPath(frame), options: [.new], context: nil)
+        newSuperview?.addObserver(self, forKeyPath: #keyPath(center), options: [.new], context: nil)
+        self.didAddObserver = true
         super.willMove(toSuperview: newSuperview)
     }
     
@@ -80,6 +83,10 @@ public class AMKeyboardFrameTrackerView: UIView {
     
     public func setHeight(_ height: CGFloat) {
         self.frame = CGRect.init(x: 0, y: 0, width: 0, height: height)
+    }
+    
+    public override var intrinsicContentSize: CGSize {
+        return CGSize.zero
     }
     
     // remove all observers when deinitialized
