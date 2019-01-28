@@ -24,7 +24,7 @@ pod 'AMKeyboardFrameTracker'
 ```
 
 ### Requirements
-- Requires iOS 8.0+
+- Requires iOS 9.0+
 
 ### Usage
 
