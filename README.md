@@ -12,7 +12,7 @@ Simple iOS Keyboard frame tracker for custom interactive Keyboard dismissal
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run the .xcworkspace.
 
 
 ### Installation
@@ -41,6 +41,27 @@ if your ```inputView``` height changes dynamically depending on the content insi
 override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     self.keyboardFrameTrackerView.setHeight(self.inputContainerView.frame.height)
+}
+```
+
+or you can use layout constraints 
+```swift
+var keyboardFrameTrackerViewHeightConstraint: NSLayoutConstraint!
+override func viewDidLoad() {
+    super.viewDidLoad()
+    self.keyboardFrameTrackerView.delegate = self
+    self.inputTextView.inputAccessoryView = self.keyboardFrameTrackerView
+    self.keyboardFrameTrackerView.translatesAutoresizingMaskIntoConstraints = false
+    self.keyboardFrameTrackerViewHeightConstraint = self.keyboardFrameTrackerView.heightAnchor.constraint(equalTo: self.inputTextView.heightAnchor, multiplier: 0)
+    self.keyboardFrameTrackerViewHeightConstraint.isActive = true
+}
+```
+
+then you you can update the constant in ```viewDidLayoutSubviews```
+```swift
+override func viewDidLayoutSubviews() {
+     super.viewDidLayoutSubviews()
+     self.keyboardFrameTrackerViewHeightConstraint.constant = self.inputTextView.frame.height
 }
 ```
 
