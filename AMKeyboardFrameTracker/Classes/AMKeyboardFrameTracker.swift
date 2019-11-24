@@ -61,24 +61,28 @@ public class AMKeyboardFrameTrackerView: UIView {
         
         newSuperview?.addObserver(self, forKeyPath: #keyPath(frame), options: [.new], context: nil)
         newSuperview?.addObserver(self, forKeyPath: #keyPath(center), options: [.new], context: nil)
+        
         self.didAddObserver = true
+        
         super.willMove(toSuperview: newSuperview)
     }
     
     override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == #keyPath(frame) || keyPath == #keyPath(center) {
-            if let frame = self.superview?.frame {
-                self.onKeyboardFrameDidChange?(frame)
-                self.delegate?.keyboardFrameDidChange(with: frame)
-            }
+            self.superViewFrameDidChange()
         }
     }
     
     override public func layoutSubviews() {
         super.layoutSubviews()
-        guard let frame = self.superview?.frame else {return}
-        self.onKeyboardFrameDidChange?(frame)
-        self.delegate?.keyboardFrameDidChange(with: frame)
+        self.superViewFrameDidChange()
+    }
+    
+    private func superViewFrameDidChange() {
+        if let frame = self.superview?.frame {
+            self.onKeyboardFrameDidChange?(frame)
+            self.delegate?.keyboardFrameDidChange(with: frame)
+        }
     }
     
     public func setHeight(_ height: CGFloat) {
