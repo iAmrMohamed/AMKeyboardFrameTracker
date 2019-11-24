@@ -480,6 +480,7 @@
 				DEVELOPMENT_TEAM = 8QSB7Y378E;
 				INFOPLIST_FILE = AMKeyboardFrameTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.3;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iAmrMohamed.AMKeyboardFrameTracker-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,6 +496,7 @@
 				DEVELOPMENT_TEAM = 8QSB7Y378E;
 				INFOPLIST_FILE = AMKeyboardFrameTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.3;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iAmrMohamed.AMKeyboardFrameTracker-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
