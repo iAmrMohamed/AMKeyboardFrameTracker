@@ -67,6 +67,11 @@ public class AMKeyboardFrameTrackerView: UIView {
         super.willMove(toSuperview: newSuperview)
     }
     
+    public override func removeFromSuperview() {
+        super.removeFromSuperview()
+        self.resetKeyboardFrame()
+    }
+    
     override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == #keyPath(frame) || keyPath == #keyPath(center) {
             self.superViewFrameDidChange()
@@ -83,6 +88,12 @@ public class AMKeyboardFrameTrackerView: UIView {
             self.onKeyboardFrameDidChange?(frame)
             self.delegate?.keyboardFrameDidChange(with: frame)
         }
+    }
+    
+    private func resetKeyboardFrame() {
+        let frame = CGRect.init(origin: .init(x: 0, y: UIScreen.main.bounds.height), size: .zero)
+        self.onKeyboardFrameDidChange?(frame)
+        self.delegate?.keyboardFrameDidChange(with: frame)
     }
     
     public func setHeight(_ height: CGFloat) {
