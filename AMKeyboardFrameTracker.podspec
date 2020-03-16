@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'AMKeyboardFrameTracker'
-    s.version          = '1.0.3'
+    s.version          = '1.0.4'
     s.summary          = 'Simple iOS Keyboard frame tracker for custom interactive Keyboard dismissal'
     
     s.homepage         = 'https://github.com/iAmrMohamed/AMKeyboardFrameTracker'
