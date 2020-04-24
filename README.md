@@ -46,14 +46,12 @@ override func viewDidLayoutSubviews() {
 
 or you can use layout constraints 
 ```swift
-var keyboardFrameTrackerViewHeightConstraint: NSLayoutConstraint!
 override func viewDidLoad() {
     super.viewDidLoad()
     self.keyboardFrameTrackerView.delegate = self
     self.inputTextView.inputAccessoryView = self.keyboardFrameTrackerView
     self.keyboardFrameTrackerView.translatesAutoresizingMaskIntoConstraints = false
-    self.keyboardFrameTrackerViewHeightConstraint = self.keyboardFrameTrackerView.heightAnchor.constraint(equalTo: self.inputTextView.heightAnchor, multiplier: 1)
-    self.keyboardFrameTrackerViewHeightConstraint.isActive = true
+    self.keyboardFrameTrackerView.heightAnchor.constraint(equalTo: self.inputTextView.heightAnchor, multiplier: 1).isActive = true
 }
 ```
 
