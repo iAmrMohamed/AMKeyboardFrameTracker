@@ -94,9 +94,9 @@ First you need to add your ```inputView``` to you ```ViewController```  ```view`
 extension ExampleViewController: AMKeyboardFrameTrackerDelegate {
     func keyboardFrameDidChange(with frame: CGRect) {
         let tabBarHeight = self.tabBarController?.tabBar.frame.height ?? 0.0
-        let bottomSapcing = self.view.frame.height - frame.origin.y - tabBarHeight - self.keyboardFrameTrackerView.frame.height
+        let bottomSpacing = self.view.frame.height - frame.origin.y - tabBarHeight - self.keyboardFrameTrackerView.frame.height
 
-        self.inputViewBottomConstraint.constant = bottomSapcing > 0 ? bottomSapcing : 0
+        self.inputViewBottomConstraint.constant = bottomSpacing > 0 ? bottomSpacing : 0
         self.view.layoutIfNeeded()
     }
 }
