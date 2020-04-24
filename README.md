@@ -52,7 +52,7 @@ override func viewDidLoad() {
     self.keyboardFrameTrackerView.delegate = self
     self.inputTextView.inputAccessoryView = self.keyboardFrameTrackerView
     self.keyboardFrameTrackerView.translatesAutoresizingMaskIntoConstraints = false
-    self.keyboardFrameTrackerViewHeightConstraint = self.keyboardFrameTrackerView.heightAnchor.constraint(equalTo: self.inputTextView.heightAnchor, multiplier: 0)
+    self.keyboardFrameTrackerViewHeightConstraint = self.keyboardFrameTrackerView.heightAnchor.constraint(equalTo: self.inputTextView.heightAnchor, multiplier: 1)
     self.keyboardFrameTrackerViewHeightConstraint.isActive = true
 }
 ```
