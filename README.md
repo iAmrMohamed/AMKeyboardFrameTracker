@@ -44,7 +44,7 @@ override func viewDidLayoutSubviews() {
 }
 ```
 
-or you can use layout constraints 
+or you can use layout constraints. You can't constrain directly because an input accessory view does not share a view hierarchy with the rest of the window, but you can update the constant in ```viewDidLayoutSubviews```.
 ```swift
 var keyboardFrameTrackerViewHeightConstraint: NSLayoutConstraint!
 override func viewDidLoad() {
@@ -52,13 +52,10 @@ override func viewDidLoad() {
     self.keyboardFrameTrackerView.delegate = self
     self.inputTextView.inputAccessoryView = self.keyboardFrameTrackerView
     self.keyboardFrameTrackerView.translatesAutoresizingMaskIntoConstraints = false
-    self.keyboardFrameTrackerViewHeightConstraint = self.keyboardFrameTrackerView.heightAnchor.constraint(equalTo: self.inputTextView.heightAnchor, multiplier: 0)
+    self.keyboardFrameTrackerViewHeightConstraint = self.keyboardFrameTrackerView.heightAnchor.constraint(equalToConstant: 0)
     self.keyboardFrameTrackerViewHeightConstraint.isActive = true
 }
-```
 
-then you you can update the constant in ```viewDidLayoutSubviews```
-```swift
 override func viewDidLayoutSubviews() {
      super.viewDidLayoutSubviews()
      self.keyboardFrameTrackerViewHeightConstraint.constant = self.inputTextView.frame.height
